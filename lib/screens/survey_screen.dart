@@ -430,12 +430,25 @@ class _SurveyScreenState extends State<SurveyScreen> {
                       Expanded(
                         child: OutlinedButton(
                           onPressed: _currentIndex == 0 ? null : _previousPage,
-                          child: const Text('Previous'),
+                          style: OutlinedButton.styleFrom(
+                            foregroundColor: Colors.teal[700],
+                            side: BorderSide(color: Colors.teal[300]!),                          
+                          ),
+                          child: const Text('Previous', style: TextStyle(
+                              color: Colors.teal,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+
                         ),
                       ),
                       const SizedBox(width: 16),
                       Expanded(
                         child: ElevatedButton(
+                          style: OutlinedButton.styleFrom(
+                            foregroundColor: Colors.teal[700],
+                            side: BorderSide(color: Colors.teal[300]!),
+                          ),
                           onPressed: _questionAnswered(_currentIndex)
                               ? (_currentIndex == _questions.length - 1
                                     ? _submit
@@ -460,7 +473,7 @@ class _SurveyScreenState extends State<SurveyScreen> {
           if (_isLoading)
             Container(
               color: Colors.black45,
-              child: const Center(child: CircularProgressIndicator()),
+              child: const Center(child: CircularProgressIndicator(color: Colors.teal)),
             ),
         ],
       ),
