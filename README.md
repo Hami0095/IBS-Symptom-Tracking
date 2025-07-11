@@ -46,3 +46,10 @@ git clone https://github.com/yourusername/ibs_symptom_tracker.git
 cd ibs_symptom_tracker
 flutter pub get
 flutter run
+
+### Testing the shared_preferences
+- Run the app
+- Fill out the survey
+- Close the app
+- Open the app again
+- The survey should be pre-filled with the last result
