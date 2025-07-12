@@ -60,7 +60,7 @@ A simple Flutter proof-of-concept app to track IBS symptoms via a 6-question sur
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/ibs_symptom_tracker.git
+git clone https://github.com/Hami0095/IBS-Symptom-Tracking.git
 cd ibs_symptom_tracker
 flutter pub get
 flutter run
